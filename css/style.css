@@ -5,17 +5,20 @@ body {
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px 500px 200px;
+    grid-template-rows: 50px auto 200px;
 }
 
 /*NAVBAR START*/
 .navbar {
+  
+    width: 100%;
     display: grid;
     grid-template-columns: 180px auto 200px;
     grid-column: 1 / -1;
     background-color: rgba(45,45,45,0.98);
     color: white;
     font-size: 14px;
+    
 }
 
 .navbar .menu {
@@ -37,11 +40,33 @@ body {
 
 
 /*NAVBAR ENDS*/
-
 .content {
-
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-rows: 220px 600px;
 }
 
+
+.background-wrapper {
+text-align: center;
+background-color: #fafafa;
+margin-top: 15px;
+}
+
+.principal-deal .text-info p span {
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.principal-deal .text-info p span a {
+    color: #0070c9;
+    text-decoration: none;
+}
+
+
+.principal-deal .text-info p span a:hover {
+    text-decoration: underline;
+}
 .footer {
 
 }
