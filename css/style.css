@@ -53,20 +53,45 @@ background-color: #fafafa;
 margin-top: 15px;
 }
 
-.principal-deal .text-info p span {
+.text-info p {
+    font-size: 22px;
+}
+
+.text-info p span {
     font-size: 20px;
     margin-right: 25px;
 }
 
-.principal-deal .text-info p span a {
+.text-info p span a {
     color: #0070c9;
     text-decoration: none;
 }
 
 
-.principal-deal .text-info p span a:hover {
+.text-info p span a:hover {
     text-decoration: underline;
 }
+
+.grid-col {
+    display: grid;
+}
+
+
+.iphone-xr .text-info h1  {
+    background-image: url('https://www.apple.com/v/home/ed/images/logos/dark-iphone_xr_logo_hero__f8r05iokxoi2_large.png');
+    background-size: 209px 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iphone-background figure {
+    width: 622px;
+    height: 352px;;
+    background-image: url('https://www.apple.com/v/home/ed/images/heroes/spring-iphone-xr/iphone_xr__b0z59ak0bqdy_large.jpg');
+    background-size: 622px 352px;
+    background-position: center;
+}
+
 .footer {
 
 }
