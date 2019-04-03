@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 500px 200px;
+}
+
+/*NAVBAR START*/
+.navbar {
+    display: grid;
+    grid-template-columns: 180px auto 200px;
+    grid-column: 1 / -1;
+    background-color: rgba(45,45,45,0.98);
+    color: white;
+    font-size: 14px;
+}
+
+.navbar .menu {
+    margin-left: 70px;
+}
+
+.navbar .menu a {
+    margin-right: 70px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 3.14;
+}
+
+.navbar .icons i {
+    margin-right: 70px;
+}
+
+
+
+/*NAVBAR ENDS*/
+
+.content {
+
+}
+
+.footer {
+
+}
+
+/*TOOLS ALIGNMENT AND POSITIONING*/
+
+.element-end {
+    justify-self: end;
+}
+
+.element-center {
+    justify-self: center;
+}
+
+.element-start {
+    justify-self: start;
+}
+
+.align-item {
+    align-self: center;
+}
