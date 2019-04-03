@@ -25,6 +25,10 @@ body {
     align-self: center;
 }
 
+.align-item-end {
+    align-self: end;
+}
+
 .container {
     display: grid;
     grid-template-columns: 100%;
@@ -32,8 +36,9 @@ body {
 }
 
 /*NAVBAR START*/
-.navbar {
-  
+#navbar {
+    position: sticky;
+    top: 0;
     width: 100%;
     display: grid;
     grid-template-columns: 180px auto 200px;
@@ -44,11 +49,11 @@ body {
     
 }
 
-.navbar .menu {
+#navbar .menu {
     margin-left: 70px;
 }
 
-.navbar .menu a {
+#navbar .menu a {
     margin-right: 70px;
     color: white;
     text-decoration: none;
@@ -56,7 +61,7 @@ body {
     line-height: 3.14;
 }
 
-.navbar .icons i {
+#navbar .icons i {
     margin-right: 70px;
 }
 
@@ -156,6 +161,10 @@ margin-top: 15px;
     background-position: center;
 }
 
+.wrapper-col-2 {
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 10px;
+}
 
 .footer {
 
