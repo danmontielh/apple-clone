@@ -25,12 +25,16 @@ body {
     align-self: center;
 }
 
+.align-end {
+    align-self: end;
+}
+
 .container {
     display: grid;
     grid-template-columns: 100%;
-    background: url('https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg') 50% 100% no-repeat; 
-    background-size: 100% 1040px;
-    height: 1040px;
+    grid-template-rows: 560px 180px auto;
+    background: url('https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg') 50% 240% no-repeat; 
+    height: 1000px;
 }
 
 /*NAVBAR START*/
@@ -62,11 +66,25 @@ border: 0px solid #000000;
    
      
 }
-
-
-
 .content {
-    grid-column: 1/ -1;
+display: grid;
+grid-template-columns: repeat(4, 25%);
+}
+
+.footer {
+    display: grid;
+grid-template-columns: repeat(2, 50%);
+margin-top : 110px;
+}
+
+.footer .copyrigh p { 
+    font-size: 10px;
+    margin: 0;
+}
+
+.footer .sub-menu  {
+    font-size: 12px;
+    
 }
 
 /*NAVBAR ENDS
@@ -164,7 +182,5 @@ margin-top: 15px;
 } */
 
 
-.footer {
-grid-column: 1 / -1;
-}
+
 
