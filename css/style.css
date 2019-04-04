@@ -1,186 +1,150 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /*TOOLS ALIGNMENT AND POSITIONING*/
 
 .grid-col {
-    display: grid;
+  display: grid;
 }
 
-
 .element-end {
-    justify-self: end;
+  justify-self: end;
 }
 
 .element-center {
-    justify-self: center;
+  justify-self: center;
 }
 
 .element-start {
-    justify-self: start;
+  justify-self: start;
 }
 
 .align-item {
-    align-self: center;
+  align-self: center;
 }
 
 .align-end {
-    align-self: end;
+  align-self: end;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 560px 180px auto;
-    background: url('https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg') 50% 240% no-repeat; 
-    height: 1000px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 560px 180px 50px;
+  background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg")
+    50% 240% no-repeat;
+  height: 1000px;
+}
+
+.container .title {
+  position: absolute;
+  top: 20%;
+  left: 27%;
+  text-align: center;
 }
 
 /*NAVBAR START*/
 .navbar {
-    height: 58px;
-    display: grid;
-    grid-template-columns: repeat(9, 120px);
-    background-image: linear-gradient(to bottom, #aaaaaa, #a3a3a3, #9c9c9c, #959595, #8e8e8e);
-    color: white;
-    font-size: 14px;
-    margin-top: 10px;
-    border-radius: 44px 44px 44px 44px;
--moz-border-radius: 44px 44px 44px 44px;
--webkit-border-radius: 44px 44px 44px 44px;
-border: 0px solid #000000;
+  height: 58px;
+  display: grid;
+  grid-template-columns: repeat(9, 120px);
+  background-image: linear-gradient(
+    to bottom,
+    #aaaaaa,
+    #a3a3a3,
+    #9c9c9c,
+    #959595,
+    #8e8e8e
+  );
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  border-radius: 44px 44px 44px 44px;
+  -moz-border-radius: 44px 44px 44px 44px;
+  -webkit-border-radius: 44px 44px 44px 44px;
+  border: 0px solid #000000;
 }
 
+.navbar a,
+.navbar i {
+  display: grid;
+  width: 120px;
+  height: 40px;
+  border-right: solid 1px gray;
+  padding-top: 15px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
 
-.navbar a, .navbar i {
-    display: grid;
-    width: 120px;
-    height: 40px;
-   border-right: solid 1px gray;
-    padding-top: 15px; 
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    
-   
-     
+.navbar a:hover,
+.navbar i:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(44, 44, 44, 1) 50%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(17, 17, 17, 1) 60%,
+    rgba(43, 43, 43, 1) 76%,
+    rgba(28, 28, 28, 1) 91%,
+    rgba(19, 19, 19, 1) 100%
+  );
 }
 .content {
-display: grid;
-grid-template-columns: repeat(4, 25%);
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.container .title {
+  color: rgb(238, 235, 235);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container .title h1 {
+  font-size: 50px;
+}
+
+.container .title h3 {
+  margin: 10px;
+  font-size: 25px;
 }
 
 .footer {
-    display: grid;
-grid-template-columns: repeat(2, 50%);
-margin-top : 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 60px;
+  margin-left: 30px;
 }
 
-.footer .copyrigh p { 
-    font-size: 10px;
-    margin: 0;
+.footer a {
+  color: #08c;
+  text-decoration: none;
 }
 
-.footer .sub-menu  {
-    font-size: 12px;
-    
+.footer a:hover {
+  text-decoration: underline;
 }
 
-/*NAVBAR ENDS
-.content {
-    display: grid;
-    font-family: Arial, Helvetica, sans-serif;
-    grid-template-rows: 220px 600px 600px auto;
+.footer .copyrigh p {
+  font-size: 12px;
+  margin: 0;
 }
 
-
-.background-wrapper {
-text-align: center;
-background-color: #fafafa;
-margin-top: 15px;
+.footer .sub-menu {
+  font-size: 12px;
 }
 
-.background-wrapper-dark {
-    text-align: center;
-    background-color: #000;
-    margin-top: 15px;
-    }
-
-.text-info p {
-    font-size: 22px;
-    margin:5px;
+.footer .sub-menu a {
+  color: #08c;
+  text-decoration: none;
+  border-right: dotted 1px black;
 }
 
-.text-info p span {
-    font-size: 20px;
-    margin-right: 25px;
+.footer .sub-menu a:hover {
+  text-decoration: underline;
 }
-
-.text-info p span a {
-    color: #0070c9;
-    text-decoration: none;
-}
-
-
-.text-info p span a:hover {
-    text-decoration: underline;
-}
-
-
-/*   Wrapper iPhone's   */
-/*
-.iphone-xr .text-info h1  {
-    background-image: url('https://www.apple.com/v/home/ed/images/logos/dark-iphone_xr_logo_hero__f8r05iokxoi2_large.png');
-    background-size: 209px 33px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.iphone-xr .iphone-background figure {
-    width: 622px;
-    height: 352px;
-    background-image: url('https://www.apple.com/v/home/ed/images/heroes/spring-iphone-xr/iphone_xr__b0z59ak0bqdy_large.jpg');
-    background-size: 622px 352px;
-    background-position: center;
-}
-
-.iphone-xs .text-info h1 {
-    background-image: url('https://www.apple.com/v/home/ed/images/logos/dark-iphone_xs_logo_hero__f4gl7cr4f662_large.png');
-    background-size: 209px 33px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.iphone-xs .iphone-background figure {
-    width: 622px;
-    height: 352px;
-    background-image: url('https://www.apple.com/v/home/ed/images/heroes/spring-iphone-xs/iphone_xs__cm637qa5dno2_large.jpg');
-    background-size: 622px 352px;
-    background-position: center;
-}
-
-.apple-tv .text-info p {
-    color: white;
-}
-
-.apple-tv .text-info h1 {
-    height: 70px;
-    background-image: url('data:image/png;base64,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');
-    background-size: 144px 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.apple-tv .appletv-background figure {
-    width: 1020px;
-    height: 624px;
-    background-image: url('https://cdn.vox-cdn.com/thumbor/o-XCUyYVUDOqy8YVu813byYBX9o=/0x0:1632x918/920x613/filters:focal(660x347:920x607):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63299589/Apple_introduces_apple_tv_plus_03252019_big.jpg.large_2x.0.jpg');
-    background-size: 1020px 624px;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
-
-
-
