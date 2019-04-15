@@ -3,37 +3,17 @@ body {
 }
 
 /*TOOLS ALIGNMENT AND POSITIONING*/
-
-.grid-col {
-  display: grid;
+.col-flex {
+  display: flex;
 }
 
-.element-end {
-  justify-self: end;
-}
 
-.element-center {
-  justify-self: center;
-}
-
-.element-start {
-  justify-self: start;
-}
-
-.align-item {
-  align-self: center;
-}
-
-.align-end {
-  align-self: end;
-}
 
 .container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 560px 180px 50px;
+  max-width: 1366px;
+  margin: 0 auto;
   background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg")
-    50% 240% no-repeat;
+    14% 217% no-repeat;
   height: 1000px;
 }
 
@@ -47,8 +27,6 @@ body {
 /*NAVBAR START*/
 .navbar {
   height: 58px;
-  display: grid;
-  grid-template-columns: repeat(9, 120px);
   background-image: linear-gradient(
     to bottom,
     #aaaaaa,
