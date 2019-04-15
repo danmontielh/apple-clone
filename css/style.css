@@ -1,32 +1,33 @@
+
+/*TOOLS ALIGNMENT AND POSITIONING*/
+
 body {
   margin: 0;
 }
-
-/*TOOLS ALIGNMENT AND POSITIONING*/
 .col-flex {
   display: flex;
 }
 
-
-
 .container {
   max-width: 1366px;
   margin: 0 auto;
-  background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg")
-    14% 217% no-repeat;
-  height: 1000px;
 }
 
-.container .title {
-  position: absolute;
-  top: 20%;
-  left: 27%;
-  text-align: center;
-}
 
 /*NAVBAR START*/
+
+.background-apple {
+  background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") 22% 100% no-repeat;
+  background-size: 1476px 1002px;
+  height: 541px;
+}
+
 .navbar {
-  height: 58px;
+  position: relative;
+  top: 50px;
+  max-width: 855px;
+  margin: 0 auto;
+  height: 40px;
   background-image: linear-gradient(
     to bottom,
     #aaaaaa,
@@ -37,10 +38,8 @@ body {
   );
   color: white;
   font-size: 14px;
-  margin-top: 10px;
-  border-radius: 44px 44px 44px 44px;
-  -moz-border-radius: 44px 44px 44px 44px;
-  -webkit-border-radius: 44px 44px 44px 44px;
+  border-radius: 2px 2px 2px 2px;
+
   border: 0px solid #000000;
 }
 
@@ -50,10 +49,10 @@ body {
   width: 120px;
   height: 40px;
   border-right: solid 1px gray;
-  padding-top: 15px;
   text-align: center;
   color: white;
   text-decoration: none;
+  align-items: center;
 }
 
 .navbar a:hover,
@@ -71,16 +70,20 @@ body {
     rgba(28, 28, 28, 1) 91%,
     rgba(19, 19, 19, 1) 100%
   );
+  border-radius: 2px 2px 2px 2px;
+ 
 }
-.content {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
+.hol img {
+  width: 100%;
 }
 
-.container .title {
+.title {
   color: rgb(238, 235, 235);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 131px;
+
 }
 
 .container .title h1 {
@@ -90,13 +93,11 @@ body {
 .container .title h3 {
   margin: 10px;
   font-size: 25px;
-}
+} 
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  margin-top: 60px;
-  margin-left: 30px;
+  padding-top: 15px;
+  padding-left: 70px;
 }
 
 .footer a {
@@ -109,18 +110,22 @@ body {
 }
 
 .footer .copyrigh p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
+  margin-bottom: 10px;
+
 }
 
 .footer .sub-menu {
-  font-size: 12px;
+  font-size: 14px;
+  margin-left: 60px;
 }
 
 .footer .sub-menu a {
   color: #08c;
   text-decoration: none;
   border-right: dotted 1px black;
+  padding: 0 6px 0 6px;
 }
 
 .footer .sub-menu a:hover {
